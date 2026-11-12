@@ -1,0 +1,39 @@
+{
+  "name": "lukaszkrakowiak/symfony-profiler-mcp-bundle",
+  "description": "MCP server tools exposing Symfony Profiler metrics and bottleneck diagnostics to AI coding agents.",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2",
+    "symfony/framework-bundle": "^7.0|^8.0",
+    "symfony/mcp-bundle": "^0.1|^1.0",
+    "symfony/web-profiler-bundle": "^7.0|^8.0"
+  },
+  "require-dev": {
+    "doctrine/doctrine-bundle": "^2.12|^3.0",
+    "symfony/http-client": "^7.0|^8.0",
+    "symfony/twig-bundle": "^7.0|^8.0"
+  },
+  "suggest": {
+    "doctrine/doctrine-bundle": "Enables SQL query count and N+1 detection in profiler audits",
+    "symfony/http-client": "Enables external HTTP request metrics in profiler audits",
+    "symfony/twig-bundle": "Enables Twig template rendering metrics in profiler audits"
+  },
+  "autoload": {
+    "psr-4": {
+      "LukaszKrakowiak\\ProfilerMcpBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "ai-mate": {
+      "scan-dirs": [
+        "src/Mcp/Tool"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": false
+    }
+  }
+}

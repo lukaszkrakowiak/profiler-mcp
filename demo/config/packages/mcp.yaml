@@ -1,0 +1,6 @@
+when@dev:
+  mcp:
+    app: 'profiler-demo'
+    version: '0.1.0'
+    client_transports:
+      stdio: true

@@ -1,0 +1,4 @@
+/vendor/
+/composer.lock
+/demo/vendor/
+/demo/var/

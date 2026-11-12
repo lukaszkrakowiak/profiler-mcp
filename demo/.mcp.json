@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "symfony-profiler": {
+      "command": "php",
+      "args": ["bin/console", "mcp:server"]
+    }
+  }
+}
