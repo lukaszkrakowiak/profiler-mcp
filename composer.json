@@ -12,7 +12,8 @@
   "require-dev": {
     "doctrine/doctrine-bundle": "^2.12|^3.0",
     "symfony/http-client": "^7.0|^8.0",
-    "symfony/twig-bundle": "^7.0|^8.0"
+    "symfony/twig-bundle": "^7.0|^8.0",
+    "phpunit/phpunit": "^11.0"
   },
   "suggest": {
     "doctrine/doctrine-bundle": "Enables SQL query count and N+1 detection in profiler audits",
@@ -35,5 +36,13 @@
     "allow-plugins": {
       "php-http/discovery": false
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LukaszKrakowiak\\ProfilerMcpBundle\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
